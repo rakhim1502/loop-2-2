@@ -22,7 +22,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   height: 100%;
-  background-color: #fff;
+  background-color: #222;
   color: #222;
 }
 
@@ -39,4 +39,102 @@ img {
   margin-left: auto;
   margin-right: auto;
 
+}
+
+.main-content{
+  flex-grow: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.profile-settings {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f2f248;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.profile-settings-form {
+}
+.profile-settings-header {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-settings-title {
+  margin: 0;
+  font-size: 20px;
+}
+.pprofile-settings-close-link {
+  display: flex;
+}
+
+.profile-settings-form-body {
+  position: relative;
+  left: 40px;
+  padding: 60px 40px 30px;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.avatar-img {
+  position: absolute;
+  left: 30px;
+  transform: translateY(-50%);
+  top: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.profile-settings-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-settings-form-group:not(:last-child){
+  margin-bottom: 24px;
+}
+
+.profile-settings-form-label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.profile-settings-form-field {
+  width: 100%;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 0;
+  border-bottom: 1px solid #555;
+}
+
+.profile-settings-row{
+  display: flex;
+}
+
+.profile-settings-form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.profile-settings-form-actions {
+  padding: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.profile-settings-form-action{
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.profile-settings-form-action:not(:last-child){
+  margin-right: 40px;
 }
